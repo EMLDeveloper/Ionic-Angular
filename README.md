@@ -1,3 +1,2 @@
 # Ionic-Angular
-App
-APP mobile
+App mobile
