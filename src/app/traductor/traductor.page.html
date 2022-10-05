@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color = "primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Traductor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+  <!-- https://www.npmjs.com/package/numero-a-letras -->
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Numero</ion-label>
+      <ion-input placeholder="Ingrese el numero " type="number" [(ngModel)]="numero" class="numero"
+        name="numero" id="numeroP">
+      </ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Letras</ion-label>
+      <ion-input  placeholder="Numeros en letras " type="text" class="resultado" id="result" value={{resultado}} readonly></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-button (click)="convertir(numero)">Calcular</ion-button>
+  </ion-item>
+</ion-content>

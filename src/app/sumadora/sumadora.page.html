@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color = "primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Sumadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Ingresar 1:</ion-label>
+      <ion-input  type="number" [(ngModel)]="num1"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Ingresar 2:</ion-label>
+      <ion-input   type="number" [(ngModel)]="num2"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-button style="width: 15%;" color="danger"  (click)="sumar()"> +  </ion-button>
+      <ion-button style="width: 15%;" color="success"  (click)="restar()">- </ion-button>
+      <ion-button style="width: 15%;" color="primary"  (click)="multiplicar()">x</ion-button>
+      <ion-button style="width: 15%;" color="warning"  (click)="dividir()">/</ion-button>
+      
+    </ion-item>
+
+    
+
+    <ION-ITEM>
+      {{resultado}}
+    </ION-ITEM>
+  </ion-list>
+
+
+
+</ion-content>
